@@ -1,3 +1,5 @@
+const USDA_API_KEY = process.env.USDA_API_KEY;
+
 function fetchNutritionReport (ndbno, reportType, apiKey) {
   return fetch(`http://api.nal.usda.gov/ndb/reports/?ndbno=${ndbno}&type=${reportType}&format=json&api_key=${apiKey}`)
     .then(res => res.json());

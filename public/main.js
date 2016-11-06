@@ -2,7 +2,6 @@
 const margin = {top: 20, right: 20, bottom: 150, left: 40};
 const h = 650 - margin.top - margin.bottom;
 const w = 1000 - margin.left - margin.right;
-const USDA_API_KEY = USDA_API_KEY || process.env.USDA_API_KEY;
 
 //scales:
 const x = d3.scaleBand()
