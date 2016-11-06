@@ -1,0 +1,22 @@
+{
+  "name": "d3-nutrition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maggieneterval/nutrition-graphing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maggieneterval/nutrition-graphing/issues"
+  },
+  "homepage": "https://github.com/maggieneterval/nutrition-graphing#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
