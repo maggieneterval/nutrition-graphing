@@ -1,3 +1,3 @@
-# nutrition-graphing
+# Food Viz
 
-Check out Food Viz at: https://food-viz.herokuapp.com/
+Check it out at: https://food-viz.herokuapp.com/
