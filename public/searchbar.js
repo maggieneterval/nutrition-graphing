@@ -4,7 +4,7 @@ function updateSearch (userInput) {
   searchDatalist.innerHTML = '';
   if (!userInput) return;
 
-  searchForFood(userInput, 5, USDA_API_KEY || process.env.USDA_API_KEY)
+  searchForFood(userInput, 5, USDA_API_KEY)
     .then(res => {
       if (!res.list) return;
       const searchResults = res.list.item;
