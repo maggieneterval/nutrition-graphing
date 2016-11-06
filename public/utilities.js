@@ -1,7 +1,8 @@
 const USDA_API_KEY = 'L0KvYqApfb8ELlfTmqFzE4SB9xGPNL6EIYi5S2Vu';
+//todo - add to config vars, move all api requests to server
 
 function fetchNutritionReport (ndbno, reportType, apiKey) {
-  return fetch(`http://api.nal.usda.gov/ndb/reports/?ndbno=${ndbno}&type=${reportType}&format=json&api_key=${apiKey}`)
+  return fetch(`https://api.nal.usda.gov/ndb/reports/?ndbno=${ndbno}&type=${reportType}&format=json&api_key=${apiKey}`)
     .then(res => res.json());
 }
 
@@ -14,7 +15,7 @@ function calculatePercentDV (nutrient) {
 }
 
 function searchForFood (searchTerm, maxResults, apiKey) {
-  return fetch(`http://api.nal.usda.gov/ndb/search/?format=json&q=${searchTerm}&max=${maxResults}&offset=0&api_key=${apiKey}`)
+  return fetch(`https://api.nal.usda.gov/ndb/search/?format=json&q=${searchTerm}&max=${maxResults}&offset=0&api_key=${apiKey}`)
     .then(res => res.json());
 }
 
