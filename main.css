@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .flexcontainer {
@@ -9,6 +9,26 @@ body {
 }
 
 input {
-  margin-bottom: 30px;
-  width: 300px;
+  width: 450px;
+  height: 40px;
+  background: white;
+  border: 2px solid gray;
+  font-size: 12px;
+  padding-left: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+rect:hover {
+  fill: orange;
+}
+
+p {
+  font-size: 12px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 40px;
 }

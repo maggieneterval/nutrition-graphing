@@ -21,4 +21,4 @@ function buildArray (foodReport) {
   return nutrients.map(nutrient => calculatePercentDV(nutrient)).filter(obj => obj !== undefined);
 }
 
-//todo: graph of amino acid composition (toggle between macros, vits/mins, etc)
+//todo: graph of amino acid composition (toggle between macros, vits/mins, etc.)

@@ -4,12 +4,16 @@
     <meta charset='utf-8'>
     <title>Food viz</title>
     <link rel='stylesheet' type='text/css' href='main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
     <div id='main' class='flexcontainer'>
-      <h3>Nutrition chart generator</h3>
-      <p>*Percent daily values based on FDA nutrient recommendations for a 2,000 calorie diet</p>
+      <h1>Nutrition chart generator</h1>
       <input id='searchbar' type='search' placeholder='Search for food here...' list='search-results' oninput='updateSearch(this.value)' />
+      <p>*Percent daily values based on 100g of selected food from the
+        <a href='https://ndb.nal.usda.gov/ndb'/>USDA Food Composition Database</a> and
+        <a href='http://www.fda.gov/Food/GuidanceRegulation/GuidanceDocumentsRegulatoryInformation/LabelingNutrition/ucm064928.htm'>FDA nutrient recommendations</a> for a 2,000 calorie diet
+      </p>
       <datalist id="search-results"></datalist>
     </div>
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.3.0/d3.js'></script>

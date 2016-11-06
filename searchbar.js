@@ -8,7 +8,7 @@ function updateSearch (userInput) {
     .then(res => {
       if (!res.list) return;
       const searchResults = res.list.item;
-      for (var i = 0; i < searchResults.length; i++) {
+      for (let i = 0; i < searchResults.length; i++) {
         if (searchResults[i].name === userInput){
           setFood(searchResults[i]);
           return;
@@ -22,4 +22,5 @@ function updateSearch (userInput) {
 
 function setFood (result) {
   drawGraph(result.ndbno);
+  //todo: display name of food item on page?
 }
