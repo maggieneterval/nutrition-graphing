@@ -30,7 +30,7 @@ function drawGraph (ndbno) {
   d3.selectAll('.axis').remove();
   //todo: transition out exit selection + transition axes instead of manually clearing chart
 
-  fetchNutritionReport(ndbno, 'f', USDA_API_KEY)
+  fetchNutritionReport(ndbno, 'f', USDA_API_KEY || process.env.USDA_API_KEY)
     .then(data => {
       const dataset = buildArray(data);
 
