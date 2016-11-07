@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const requestify = require('requestify');
 const USDA_API_KEY = process.env.USDA_API_KEY;
 
 app.use(express.static(path.join('public')));
